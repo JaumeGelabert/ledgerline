@@ -1,6 +1,6 @@
 {
   "name": "ledgerline",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A modern interactive CLI to track expenses, stored locally in JSON.",
   "type": "module",
   "bin": {
@@ -15,6 +15,10 @@
     "build": "tsc --build",
     "clean": "rimraf dist",
     "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JaumeGelabert/ledgerline"
   },
   "keywords": [
     "cli",
