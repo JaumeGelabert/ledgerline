@@ -6,7 +6,10 @@ The format is based on Keep a Changelog and this project adheres to Semantic Ver
 
 ## [Unreleased]
 
-No changes yet.
+## [0.1.3] - 2025-08-07
+### Changed
+- CLI version now sourced dynamically from `package.json` (no longer hard-coded).
+
 
 ## [0.1.0] - 2025-08-07
 ### Added
