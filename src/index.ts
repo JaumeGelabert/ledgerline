@@ -5,13 +5,17 @@ import chalk from "chalk";
 import { nanoid } from "nanoid";
 import { loadExpenses, saveExpenses, getDataFilePath } from "./storage.js";
 import type { Expense } from "./types.js";
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
+const pkg = require("../package.json") as { version: string };
 
 const program = new Command();
 
 program
   .name("ledgerline")
   .description("Track expenses in a local JSON store")
-  .version("0.1.0")
+  .version(pkg.version)
   .showHelpAfterError()
   .addHelpText(
     "afterAll",

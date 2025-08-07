@@ -1,6 +1,6 @@
 {
   "name": "ledgerline",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A modern interactive CLI to track expenses, stored locally in JSON.",
   "type": "module",
   "bin": {
