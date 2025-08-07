@@ -1,0 +1,45 @@
+{
+  "name": "ledgerline",
+  "version": "0.1.0",
+  "description": "A modern interactive CLI to track expenses, stored locally in JSON.",
+  "type": "module",
+  "bin": {
+    "ledgerline": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "expenses",
+    "budget",
+    "tracker",
+    "typescript"
+  ],
+  "author": "Jaume Gelabert",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.3.7",
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^22.7.4",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4"
+  }
+}
